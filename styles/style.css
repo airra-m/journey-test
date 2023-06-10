@@ -1,8 +1,8 @@
 :root {
-    --lightgrey: #a7a7a7;
-    --grey: #797979;
-    --lightgreen: #f6f5f0;
-    --darkgreen: #aaa371;
+    --silverchalice: #a7a7a7;
+    --boulder: #797979;
+    --pampas: #f6f5f0;
+    --greensmoke: #aaa371;
     --font-lato: 'Lato', sans-serif;
     --font-pt: 'PT Serif', serif;
     font-size: 16px;
@@ -11,7 +11,7 @@
 body {
     font-family: var(--font-lato);
     font-weight: 300;
-    color: var(--grey); 
+    color: var(--boulder); 
     margin: 0;
 }
 
@@ -57,7 +57,7 @@ button {
 }
 
 .primary-btn {
-    background-color: var(--darkgreen);
+    background-color: var(--greensmoke);
 }
     
 .primary-btn:hover {
@@ -65,7 +65,7 @@ button {
 }
 
 .secondary-btn {
-    background-color: var(--lightgrey);
+    background-color: var(--silverchalice);
 }
 
 .secondary-btn:hover {
@@ -76,7 +76,7 @@ button {
 /* TEXT STYLES */
 
 h1 {
-    color: var(--darkgreen);
+    color: var(--greensmoke);
     font-family: var(--font-pt);
     font-weight: 300;
     margin: 1rem 0;
@@ -86,7 +86,7 @@ h2 {
     font-family: var(--font-lato);
     font-weight: 400;
     font-size: .7rem;
-    color: var(--lightgrey);
+    color: var(--silverchalice);
     text-transform: uppercase;
     letter-spacing: 1px;
     margin: 0;
@@ -112,6 +112,7 @@ p {
     z-index: 2;
     font-size: 1.5rem;
     font-weight: 200;
+    padding: 0 2rem;
     margin-bottom: 3rem;
 }
 
@@ -123,8 +124,8 @@ p {
     justify-content: space-around;
     align-items: center;
     padding: 1rem;
-    background-color: var(--lightgreen);
-    color: var(--darkgreen);
+    background-color: var(--pampas);
+    color: var(--greensmoke);
     position: sticky;
     top: 0;
     transition: .5s;
@@ -145,14 +146,14 @@ p {
 
 .nav-title > a:nth-child(1) {
     text-decoration: none;
-    color: var(--darkgreen);
+    color: var(--greensmoke);
     letter-spacing: .2px;
     margin-bottom: -10px;
 }
 
 .nav-title > a:nth-child(2) {
     text-decoration: none;
-    color: var(--darkgreen);
+    color: var(--greensmoke);
     font-family: var(--font-pt);
     letter-spacing: 2.5px;
 }
@@ -178,7 +179,7 @@ p {
     align-items: center;
     justify-content: space-evenly;
     padding: 0.25rem 0;
-    background-color: var(--lightgreen);
+    background-color: var(--pampas);
     transition: .5s;
 }
 
@@ -196,7 +197,7 @@ p {
 .nav-mobile {
     width: 100vw;
     height: 60vh;
-    background-color: var(--lightgreen);
+    background-color: var(--pampas);
     position: fixed;
     bottom: 0;
     z-index: 4;
@@ -234,6 +235,12 @@ p {
     flex-wrap: wrap;
 }
 
+.row .img {
+    background-size: cover;
+    height: 0;
+    padding-top: 75%;
+}
+
 .cta-full {
     display: flex;
     flex-direction: column;
@@ -243,23 +250,17 @@ p {
 }
 
 .cta-content {
-    background-color: var(--lightgreen);
+    background-color: var(--pampas);
     padding: 3rem;
     text-align: center;
 }
 
 .cta-left .img {
     background-image: url("img/phil-desforges-WRq_sFNhxfM-unsplash.jpg");
-    background-size: cover;
-    height: 0;
-    padding-top: 75%;
 }
 
 .cta-right .img {
     background-image: url("img/roberto-nickson-YCW4BEhKluw-unsplash.jpg") ;
-    background-size: cover;
-    height: 0;
-    padding-top: 75%;
 }
 
 .userflow {
@@ -305,10 +306,9 @@ p {
 }
 
 
-
 /* DESKTOP */
 
-@media screen and (min-width: 821px) {
+@media screen and (min-width: 962px) {
 
     /* MAIN NAV */
 
@@ -327,7 +327,7 @@ p {
     
     .nav-detail > a {
         text-decoration: none;
-        color: var(--darkgreen);
+        color: var(--greensmoke);
     }
 
     .nav-detail > a:hover {
@@ -400,6 +400,17 @@ p {
         font-size: 1.7rem;
         font-weight: 200;
         margin-bottom: 4rem;    
+    }
+
+}
+
+
+/* LARGE DESKTOP */
+
+@media screen and (min-width: 1921px) {
+
+    :root {
+        font-size: 26px;
     }
 
 }
