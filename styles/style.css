@@ -311,9 +311,9 @@ p {
 }
 
 
-/* DESKTOP */
+/* TABLET */
 
-@media screen and (min-width: 962px) {
+@media screen and (min-width: 810px) {
 
     /* MAIN NAV */
 
@@ -356,12 +356,12 @@ p {
     }
 
     .cta--full {
-        padding: 4.5rem 24rem;
+        padding: 4.5rem 9rem;
     }
 
     .cta__content {
         padding: 5rem 4rem;
-        padding-right: 14rem;
+        padding-right: 6rem;
         text-align: left;
     }
 
@@ -405,6 +405,21 @@ p {
         font-size: 1.7rem;
         font-weight: 200;
         margin-bottom: 4rem;
+    }
+
+}
+
+
+/* DESKTOP */
+
+@media screen and (min-width: 1181px) {
+
+    .cta--full {
+        padding: 4.5rem 24rem;
+    }
+
+    .cta__content {
+        padding-right: 14rem;
     }
 
 }
