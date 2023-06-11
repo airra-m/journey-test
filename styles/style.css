@@ -11,7 +11,7 @@
 body {
     font-family: var(--font-lato);
     font-weight: 300;
-    color: var(--boulder); 
+    color: var(--boulder);
     margin: 0;
 }
 
@@ -37,7 +37,7 @@ body {
 .btn-group {
     margin-top: 2rem;
 }
-    
+
 button {
     font-family: var(--font-lato);
     color: #fff;
@@ -52,26 +52,26 @@ button {
     cursor: pointer;
 }
 
-.btn-group > .primary-btn {
+.btn-group>.btn--primary {
     margin-right: 1rem;
 }
 
-.primary-btn {
+.btn--primary {
     background-color: var(--greensmoke);
 }
-    
-.primary-btn:hover {
+
+.btn--primary:hover {
     background-color: #938D62;
 }
 
-.secondary-btn {
+.btn--secondary {
     background-color: var(--silverchalice);
 }
 
-.secondary-btn:hover {
+.btn--secondary:hover {
     background-color: #959595;
 }
-    
+
 
 /* TEXT STYLES */
 
@@ -98,15 +98,15 @@ p {
     margin: 0;
 }
 
-.nav > p {
+.nav>p {
     font-size: .8rem;
 }
 
-.cta-full > p {
+.cta--full>p {
     text-align: center;
 }
 
-.uf-tile > p {
+.uf__tile>p {
     font-family: var(--font-pt);
     color: #fff;
     z-index: 2;
@@ -137,33 +137,33 @@ p {
     opacity: 0;
 }
 
-.nav-title {
+.nav__title {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-transform: uppercase;
 }
 
-.nav-title > a:nth-child(1) {
+.nav__title>a:nth-child(1) {
     text-decoration: none;
     color: var(--greensmoke);
     letter-spacing: .2px;
     margin-bottom: -10px;
 }
 
-.nav-title > a:nth-child(2) {
+.nav__title>a:nth-child(2) {
     text-decoration: none;
     color: var(--greensmoke);
     font-family: var(--font-pt);
     letter-spacing: 2.5px;
 }
 
-.nav-title > a:nth-child(2) > p {
+.nav__title>a:nth-child(2)>p {
     letter-spacing: 2.5px;
     font-size: .5rem;
 }
 
-.nav-detail {
+.nav__detail {
     display: none;
 }
 
@@ -190,11 +190,11 @@ p {
     background-color: transparent;
 }
 
-.mobile-btn-overlay button > img {
+.mobile-btn-overlay button>img {
     width: 100%;
 }
 
-.nav-mobile {
+.nav--mobile {
     width: 100vw;
     height: 60vh;
     background-color: var(--pampas);
@@ -207,7 +207,7 @@ p {
     transition: .5s;
 }
 
-.nav-mobile button {
+.nav--mobile button {
     float: right;
     margin-top: 1.5rem;
     margin-right: 1.5rem;
@@ -216,11 +216,11 @@ p {
     width: 2.65rem
 }
 
-.nav-mobile button img {
+.nav--mobile button img {
     width: 100%;
 }
 
-.nav-mobile.hide-display,
+.nav--mobile.hide-display,
 .mobile-btn-overlay.hide-display {
     transform: translateY(100%);
     opacity: 0;
@@ -235,13 +235,13 @@ p {
     flex-wrap: wrap;
 }
 
-.row .img {
+.cta__img {
     background-size: cover;
     height: 0;
     padding-top: 75%;
 }
 
-.cta-full {
+.cta--full {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -249,18 +249,20 @@ p {
     text-align: center;
 }
 
-.cta-content {
+.cta__content {
     background-color: var(--pampas);
     padding: 3rem;
     text-align: center;
 }
 
-.cta-left .img {
+.cta--left .cta__img {
     background-image: url("img/phil-desforges-WRq_sFNhxfM-unsplash.jpg");
+    background-position: center;
 }
 
-.cta-right .img {
-    background-image: url("img/roberto-nickson-YCW4BEhKluw-unsplash.jpg") ;
+.cta--right .cta__img {
+    background-image: url("img/roberto-nickson-YCW4BEhKluw-unsplash.jpg");
+    background-position: center;
 }
 
 .userflow {
@@ -269,7 +271,7 @@ p {
     flex-wrap: nowrap;
 }
 
-.uf-tile {
+.uf__tile {
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -279,7 +281,7 @@ p {
     position: relative;
 }
 
-.uf-tile::after {
+.uf__tile::after {
     content: "";
     background-color: rgb(0, 0, 0, 0.4);
     position: absolute;
@@ -289,20 +291,23 @@ p {
     transition: .25s;
 }
 
-.uf-tile:hover:after {
+.uf__tile:hover:after {
     opacity: 0;
 }
 
-.tile-1 {
-    background-image: url("img/jared-rice-PibraWHb4h8-unsplash.jpg") ;
+.uf--tile-1 {
+    background-image: url("img/jared-rice-PibraWHb4h8-unsplash.jpg");
+    background-position: center;
 }
 
-.tile-2 {
-    background-image: url("img/joseph-gonzalez-fdlZBWIP0aM-unsplash.jpg") ;
+.uf--tile-2 {
+    background-image: url("img/joseph-gonzalez-fdlZBWIP0aM-unsplash.jpg");
+    background-position: center;
 }
 
-.tile-3 {
-    background-image: url("img/ralph-ravi-kayden-CsqHFS6ZXfM-unsplash.jpg") ;
+.uf--tile-3 {
+    background-image: url("img/ralph-ravi-kayden-CsqHFS6ZXfM-unsplash.jpg");
+    background-position: center;
 }
 
 
@@ -316,63 +321,63 @@ p {
         padding: 1.5rem;
     }
 
-    .nav-detail {
+    .nav__detail {
         display: flex;
         align-items: center;
     }
-    
-    .nav-detail > img {
-        margin-right: 8px;    
+
+    .nav__detail>img {
+        margin-right: 8px;
     }
-    
-    .nav-detail > a {
+
+    .nav__detail>a {
         text-decoration: none;
         color: var(--greensmoke);
     }
 
-    .nav-detail > a:hover {
+    .nav__detail>a:hover {
         color: #938D62;
     }
 
 
     /* MOBILE NAV */
-    
+
     .mobile-btn-overlay,
-    .nav-mobile {
+    .nav--mobile {
         display: none;
     }
 
-            
+
     /* MAIN SECTIONS */
 
     .row {
         flex-direction: row;
         flex-wrap: nowrap;
     }
-        
-    .cta-full {
+
+    .cta--full {
         padding: 4.5rem 24rem;
     }
-    
-    .cta-content {
+
+    .cta__content {
         padding: 5rem 4rem;
         padding-right: 14rem;
         text-align: left;
     }
-    
-    .row .img {
+
+    .cta__img {
         flex: 1 0 50%;
         padding-top: 0;
         height: auto;
     }
-        
+
     .userflow {
         padding: 8rem;
         column-gap: 1.5rem;
         flex-wrap: nowrap;
     }
-    
-    .uf-tile {
+
+    .uf__tile {
         flex: 1 0 calc(33.3% - 1.5rem);
     }
 
@@ -382,24 +387,24 @@ p {
     .btn-group {
         margin-top: 2rem;
     }
-        
+
     button {
         padding: 0.7rem 1rem;
         letter-spacing: 1px;
         font-size: .7rem;
     }
 
-    .btn-group > .primary-btn {
+    .btn-group>.btn--primary {
         margin-right: 1rem;
     }
 
-    
+
     /* TEXT STYLES */
 
-    .uf-tile > p {
+    .uf__tile>p {
         font-size: 1.7rem;
         font-weight: 200;
-        margin-bottom: 4rem;    
+        margin-bottom: 4rem;
     }
 
 }
@@ -414,5 +419,3 @@ p {
     }
 
 }
-
-
